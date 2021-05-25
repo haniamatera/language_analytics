@@ -1,0 +1,6 @@
+os
+Path
+pandas==1.1.5
+re
+string
+numpy==1.19.5
