@@ -3,9 +3,9 @@
 ## Description of the assignment
 
 Using the text corpus called 100-english-novels which contains transcripts of 100 most popular English novels, this assignment’s task was to create a Python script which would do the following:
-  •	Calculate the total word count for each novel
-  •	Calculate the total number of unique words for each novel
-  •	Save result as a single file consisting of three columns: filename, total_words, unique_words
+  - Calculate the total word count for each novel
+  - Calculate the total number of unique words for each novel
+  - Save result as a single file consisting of three columns: filename, total_words, unique_words
 
 
 ___Data___
