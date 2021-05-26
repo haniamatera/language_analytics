@@ -11,7 +11,7 @@ The main task in this assignment was to calculate and visualize the evolution of
 ___Data___
 
 
-Data can be found and downloaded from an online source Kaggle.com and can be accessed [here]:https://www.kaggle.com/therohk/million-headlines
+Data can be found and downloaded from an online source Kaggle.com and can be accessed [here](https://www.kaggle.com/therohk/million-headlines)
 rises a transcript from 100 most popular novels written in English. It can be viewed and downloaded from the 'data' folder. 
 
 ## The method
