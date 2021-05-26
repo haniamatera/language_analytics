@@ -18,7 +18,7 @@ In order to perform the assignment task, I have created a Python script with a l
 
 
 ## Results and evaluation
-The detailed results (saved as word_count_df.csv) can be viewed and downloaded from the ‘out’ folder in GitHub repository under the link specified below. ![image](https://user-images.githubusercontent.com/54862257/119623116-27b32600-be08-11eb-8652-46b048c795f9.png)
+The detailed results (saved as word_count_df.csv) can be viewed and downloaded from the ‘out’ folder in GitHub repository under the link specified below.
 
 
 ## Repository structure and files
