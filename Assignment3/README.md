@@ -9,6 +9,7 @@ The main task in this assignment was to calculate and visualize the evolution of
 
 
 ___Data___
+
 Data can be found and downloaded from an online source Kaggle.com under the following [link](https://www.kaggle.com/therohk/million-headlines). The complete .csv file can be also accessed in the 'data' folder in th ecurrent GitHub repository.
 
 ## The method
