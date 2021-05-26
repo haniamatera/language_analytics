@@ -10,7 +10,7 @@ The main task in this assignment was to calculate and visualize the evolution of
 
 ___Data___
 
-Data can be found and downloaded from an online source Kaggle.com under the following [link](https://www.kaggle.com/therohk/million-headlines). The complete .csv file can be also accessed in the 'data' folder in th ecurrent GitHub repository.
+Data can be found and downloaded from an online source Kaggle.com under the following [link](https://www.kaggle.com/therohk/million-headlines). The complete .csv file can be also accessed in the 'data' folder in the current GitHub repository.
 
 ## The method
 Before calculating the sentiment scores across time, the date format of news headlines had to be changed into a dash-separated format. That has been done by constructing a loop which iterates over all articles and changes the dates. Subsequently, the data was fed into another loop that ran over each of the headlines and calculated the sentiment polarity score using nlp pipeline. In this assignment, I employed spacy's pipeline ```en_core_web_sm```. After completing all the preprocessing steps, I have made three different visualizations displaying the polarity score evolution over time, with the mean rolling average of one week, one month and one year.   
