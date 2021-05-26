@@ -10,34 +10,27 @@ The main task in this assignment was to calculate and visualize the evolution of
 
 ___Data___
 
-
-Data can be found and downloaded from an online source Kaggle.com and can be accessed [here](https://www.kaggle.com/therohk/million-headlines)
-rises a transcript from 100 most popular novels written in English. It can be viewed and downloaded from the 'data' folder. 
+Data can be found and downloaded from an online source Kaggle.com under the following [link](https://www.kaggle.com/therohk/million-headlines). The complete .cv=sv file can be also accessed in the 'data' folder in th ecurrent GitHub repository.
 
 ## The method
-In order to solve the assignment, I have created a function that takes:
-- a keyword (a word of user’s choice that creates a collocate pairs with all words across the corpus),
-- a window size (the number of words that are taken into account when calculating the collocate),
-- a file path (the directory of the text corpus data)
-as input arguments which can be manipulated by the user.
-
-First of all, the necessary text preprocessing had to be performed. This included tokenizing the words, making them uppercase and counting their raw frequency of appearance across the entire corpus. Subsequently, the O11 score signifying the co-occurrence of the given word and the keyword, the R1 score signifying the keyword’s general appearance in the text corpus, the O12 score signifying the frequency of the keyword appearance without the collocate word, the C1 signifying the frequency of the collocate word’s general appearance across the corpus, and finally the O21 signifying the frequency of collocate word’s appearance without the keyword, were calculated. This operation has enabled the calculation of MI score, which is a is a measure of collocational strength between the words.
+Before calculating the sentiment scores across time, the date format of news headlines had to be changed into a dash-separated format. That has been done by constructing a loop which iterates over all articles and changes the dates. Subsequently, the data was fed into another loop that ran over each of the headlines and calculated the sentiment polarity score using nlp pipeline. In this assignment, I employed spacy's pipeline ```en_core_web_sm```. After completing all the preprocessing steps, I have made three different visualizations displaying the polarity score evolution over time, with the mean rolling average of one week, one month and one year.   
 
 
 ## Results and evaluation
-Data frame with the collocate word, its raw frequency and the MI score can be accessed in the output folder in the GitHub repository. 
+The three plots show how the mean sentiment score calculated on the bases of the Australian ABC news headlines changes over time (2003-2020). In each of the plots the mean score of the headlines (which can span from -1 to 1) is plotted on the -axis against time. The plots with the results can be viewed in the 'visuals' folder.
+
 
 ## Repository structure and files
 This repository has the following directory structure:
 
 | Column | Description|
 |--------|:-----------|
-```out``` | Contains the outputs with a .csv file containing information about the collocate words of a specific keyword.
-```collocation.py```| The script to be executed from the terminal.
-```create_visual_venv.sh``` | A bash script which automatically generates a new virtual environment 'collocation_env', and install all the packages contained within 'requirements.txt'
+```visuals``` | Contains the visual output with graphs showing the evolution of mean sentiment score across different time intervals.
+```sentiment.py```| The script to be executed from the terminal.
+```create_visual_venv.sh``` | A bash script which automatically generates a new virtual environment 'sentiment_env', and install all the packages contained within 'requirements.txt'
 ```requirements.txt``` | A list of packages along with the versions that are required.
 ```README.md``` | This readme file.
-```data```| A folder with .txt files with transcripts of the English novels
+```data```| A folder with a .csv file containing news headlines 
 
 
 ## Usage (reproducing the results)
@@ -47,15 +40,15 @@ In order to run the script, one is required to set up the virtual environment wi
 
 ```bash
 git clone https://github.com/haniamatera/language_analytics.git
-cd Assignment2
+cd Assignment3
 bash ./create_visual_venv.sh
-source ./collocation_env/bin/activate
+source ./sentiment_env/bin/activate
 ```
 
 ### Execute the script 
 Now, the script can be executed:
 
 ```bash
-python collocation.py  
+python sentiment.py  
 
 ```
